@@ -1,0 +1,11 @@
+<div class="list-body">
+  {{#if list.length}}
+    {{#each list}}
+      <div>
+          <a href="{{this.url}}">{{this.title}}</a>
+          <span style="margin-left: 15px;color: green;font-size: 12px">发布者：{{this.author}}</span>
+          <span style="margin-left: 15px;color: green;font-size: 12px">发布时间：{{this.lastModify}}</span>
+      </div>
+    {{/each}}
+  {{/if}}
+</div>
